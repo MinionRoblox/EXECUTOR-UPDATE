@@ -136,11 +136,12 @@ local function UOGPV_fake_script() -- Clear.LocalScript
 	end)
 end
 coroutine.wrap(UOGPV_fake_script)()
+
 local function OYFUZUS_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
-	Close.MouseButton1Click:Connect(function()
-		screenGui:Destroy()
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy() 
 	end)
 end
 coroutine.wrap(OYFUZUS_fake_script)()
