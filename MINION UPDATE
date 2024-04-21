@@ -12,6 +12,8 @@ local TextLabel = Instance.new("TextLabel")
 local UICorner_5 = Instance.new("UICorner")
 local IY = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local DEX = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 
 -- Properties
 
@@ -118,40 +120,69 @@ IY.TextWrapped = true
 
 UICorner_6.Parent = IY
 
+DEX.Name = "DEX"
+DEX.Parent = Frame
+DEX.BackgroundColor3 = Color3.new(0.588235, 0.25098, 0.894118)
+DEX.BorderColor3 = Color3.new(0, 0, 0)
+DEX.BorderSizePixel = 0
+DEX.Position = UDim2.new(0.170731708, 0, 0.843137264, 0)
+DEX.Size = UDim2.new(0, 69, 0, 28)
+DEX.Font = Enum.Font.FredokaOne
+DEX.Text = "DEX"
+DEX.TextColor3 = Color3.new(0, 0, 0)
+DEX.TextScaled = true
+DEX.TextSize = 14
+DEX.TextWrapped = true
+
+UICorner_7.Parent = DEX
+
 -- Scripts
 
-local function WKJR_fake_script() -- Execute.LocalScript 
+local function PDUEN_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.Source.Text)()
 	end)
 end
-coroutine.wrap(WKJR_fake_script)()
-local function UOGPV_fake_script() -- Clear.LocalScript 
+coroutine.wrap(PDUEN_fake_script)()
+local function WLQDYW_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Source.Text = ''
 	end)
 end
-coroutine.wrap(UOGPV_fake_script)()
-
-local function OYFUZUS_fake_script() -- Close.LocalScript 
+coroutine.wrap(WLQDYW_fake_script)()
+local function QHTKU_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent:Destroy() 
+		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(OYFUZUS_fake_script)()
+coroutine.wrap(QHTKU_fake_script)()
+local function MSJJIFO_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
 
-utine.wrap(HICOFA_fake_script)()
-local function OYZH_fake_script() -- IY.LocalScript 
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(MSJJIFO_fake_script)()
+local function IVVWX_fake_script() -- IY.LocalScript 
 	local script = Instance.new('LocalScript', IY)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(OYZH_fake_script)()
+coroutine.wrap(IVVWX_fake_script)()
+local function IYSKWEO_fake_script() -- DEX.LocalScript 
+	local script = Instance.new('LocalScript', DEX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+	end)
+end
+coroutine.wrap(IYSKWEO_fake_script)()
+
