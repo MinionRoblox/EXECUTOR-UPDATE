@@ -144,13 +144,8 @@ local function OYFUZUS_fake_script() -- Close.LocalScript
 	end)
 end
 coroutine.wrap(OYFUZUS_fake_script)()
-local function HICOFA_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
 
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-end
-coroutine.wrap(HICOFA_fake_script)()
+utine.wrap(HICOFA_fake_script)()
 local function OYZH_fake_script() -- IY.LocalScript 
 	local script = Instance.new('LocalScript', IY)
 
