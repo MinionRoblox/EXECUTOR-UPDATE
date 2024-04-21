@@ -14,6 +14,8 @@ local IY = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local DEX = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local Toggle = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
 
 -- Properties
 
@@ -136,53 +138,77 @@ DEX.TextWrapped = true
 
 UICorner_7.Parent = DEX
 
+Toggle.Name = "Toggle"
+Toggle.Parent = Frame
+Toggle.BackgroundColor3 = Color3.new(1, 1, 1)
+Toggle.BorderColor3 = Color3.new(0, 0, 0)
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0.40150094, 0, -0.460784316, 0)
+Toggle.Size = UDim2.new(0, 70, 0, 74)
+Toggle.Image = "http://www.roblox.com/asset/?id=17242096912"
+
+UICorner_8.Parent = Toggle
+
 -- Scripts
 
-local function PDUEN_fake_script() -- Execute.LocalScript 
+local function SVWYUM_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.Source.Text)()
 	end)
 end
-coroutine.wrap(PDUEN_fake_script)()
-local function WLQDYW_fake_script() -- Clear.LocalScript 
+coroutine.wrap(SVWYUM_fake_script)()
+local function TTRDKBM_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Source.Text = ''
 	end)
 end
-coroutine.wrap(WLQDYW_fake_script)()
-local function QHTKU_fake_script() -- Close.LocalScript 
+coroutine.wrap(TTRDKBM_fake_script)()
+local function WFVVCKK_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(QHTKU_fake_script)()
-local function MSJJIFO_fake_script() -- Frame.LocalScript 
+coroutine.wrap(WFVVCKK_fake_script)()
+local function DWOPHS_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(MSJJIFO_fake_script)()
-local function IVVWX_fake_script() -- IY.LocalScript 
+coroutine.wrap(DWOPHS_fake_script)()
+local function JISQ_fake_script() -- IY.LocalScript 
 	local script = Instance.new('LocalScript', IY)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(IVVWX_fake_script)()
-local function IYSKWEO_fake_script() -- DEX.LocalScript 
+coroutine.wrap(JISQ_fake_script)()
+local function GXEPQP_fake_script() -- DEX.LocalScript 
 	local script = Instance.new('LocalScript', DEX)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
 	end)
 end
-coroutine.wrap(IYSKWEO_fake_script)()
+coroutine.wrap(GXEPQP_fake_script)()
+local function WDPKYGM_fake_script() -- Toggle.LocalScript 
+	local script = Instance.new('LocalScript', Toggle)
+
+	ToggleButton.MouseButton1Click:Connect(function()
+		if ScreenGui.Enabled then
+			ScreenGui.Enabled = false -- Скрыть ScreenGui
+		else
+			ScreenGui.Enabled = true -- Показать ScreenGui
+		end
+	end)
+end
+coroutine.wrap(WDPKYGM_fake_script)()
+
 
