@@ -14,7 +14,7 @@ local IY = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local DEX = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local Toggle = Instance.new("ImageButton")
+local FlyGUI = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 
 -- Properties
@@ -138,77 +138,76 @@ DEX.TextWrapped = true
 
 UICorner_7.Parent = DEX
 
-Toggle.Name = "Toggle"
-Toggle.Parent = Frame
-Toggle.BackgroundColor3 = Color3.new(1, 1, 1)
-Toggle.BorderColor3 = Color3.new(0, 0, 0)
-Toggle.BorderSizePixel = 0
-Toggle.Position = UDim2.new(0.40150094, 0, -0.460784316, 0)
-Toggle.Size = UDim2.new(0, 70, 0, 74)
-Toggle.Image = "http://www.roblox.com/asset/?id=17242096912"
+FlyGUI.Name = "FlyGUI"
+FlyGUI.Parent = Frame
+FlyGUI.BackgroundColor3 = Color3.new(0.588235, 0.25098, 0.894118)
+FlyGUI.BorderColor3 = Color3.new(0, 0, 0)
+FlyGUI.BorderSizePixel = 0
+FlyGUI.Position = UDim2.new(0.341463417, 0, 0.843137264, 0)
+FlyGUI.Size = UDim2.new(0, 100, 0, 28)
+FlyGUI.Font = Enum.Font.FredokaOne
+FlyGUI.Text = "FLY GUI"
+FlyGUI.TextColor3 = Color3.new(0, 0, 0)
+FlyGUI.TextScaled = true
+FlyGUI.TextSize = 14
+FlyGUI.TextWrapped = true
 
-UICorner_8.Parent = Toggle
+UICorner_8.Parent = FlyGUI
 
 -- Scripts
 
-local function SVWYUM_fake_script() -- Execute.LocalScript 
+local function QFGPSGN_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.Source.Text)()
 	end)
 end
-coroutine.wrap(SVWYUM_fake_script)()
-local function TTRDKBM_fake_script() -- Clear.LocalScript 
+coroutine.wrap(QFGPSGN_fake_script)()
+local function ZAYJ_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Source.Text = ''
 	end)
 end
-coroutine.wrap(TTRDKBM_fake_script)()
-local function WFVVCKK_fake_script() -- Close.LocalScript 
+coroutine.wrap(ZAYJ_fake_script)()
+local function JDZO_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(WFVVCKK_fake_script)()
-local function DWOPHS_fake_script() -- Frame.LocalScript 
+coroutine.wrap(JDZO_fake_script)()
+local function SCLJOXB_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(DWOPHS_fake_script)()
-local function JISQ_fake_script() -- IY.LocalScript 
+coroutine.wrap(SCLJOXB_fake_script)()
+local function HVVQF_fake_script() -- IY.LocalScript 
 	local script = Instance.new('LocalScript', IY)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(JISQ_fake_script)()
-local function GXEPQP_fake_script() -- DEX.LocalScript 
+coroutine.wrap(HVVQF_fake_script)()
+local function XJTIXMB_fake_script() -- DEX.LocalScript 
 	local script = Instance.new('LocalScript', DEX)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
 	end)
 end
-coroutine.wrap(GXEPQP_fake_script)()
-local function WDPKYGM_fake_script() -- Toggle.LocalScript 
-	local script = Instance.new('LocalScript', Toggle)
+coroutine.wrap(XJTIXMB_fake_script)()
+local function FQKCUF_fake_script() -- FlyGUI.LocalScript 
+	local script = Instance.new('LocalScript', FlyGUI)
 
-	ToggleButton.MouseButton1Click:Connect(function()
-		if ScreenGui.Enabled then
-			ScreenGui.Enabled = false -- Скрыть ScreenGui
-		else
-			ScreenGui.Enabled = true -- Показать ScreenGui
-		end
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MinionRoblox/FLY-GUI-MINION/main/FLY%20SCRIPTS%20FROM%20MINION"))()
 	end)
 end
-coroutine.wrap(WDPKYGM_fake_script)()
-
-
+coroutine.wrap(FQKCUF_fake_script)()
