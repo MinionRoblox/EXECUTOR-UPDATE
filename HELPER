@@ -1,0 +1,227 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Source = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local IY = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local DEX = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local FlyGUI = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+
+-- Properties
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.274681538, 0, 0.258321792, 0)
+Frame.Size = UDim2.new(0, 533, 0, 306)
+
+UICorner.Parent = Frame
+
+Source.Name = "Source"
+Source.Parent = Frame
+Source.BackgroundColor3 = Color3.new(0.588235, 0.25098, 0.898039)
+Source.BorderColor3 = Color3.new(0, 0, 0)
+Source.BorderSizePixel = 0
+Source.Position = UDim2.new(0.0741940141, 0, 0.250980347, 0)
+Source.Size = UDim2.new(0, 450, 0, 109)
+Source.Font = Enum.Font.SourceSans
+Source.Text = ""
+Source.TextColor3 = Color3.new(0, 0, 0)
+Source.TextSize = 14
+
+UICorner_2.Parent = Source
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.new(0.588235, 0.25098, 0.894118)
+Execute.BorderColor3 = Color3.new(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.385127038, 0, 0.672549009, 0)
+Execute.Size = UDim2.new(0, 121, 0, 30)
+Execute.Font = Enum.Font.FredokaOne
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.new(0, 0, 0)
+Execute.TextScaled = true
+Execute.TextSize = 14
+Execute.TextWrapped = true
+
+UICorner_3.Parent = Execute
+
+Clear.Name = "Clear"
+Clear.Parent = Frame
+Clear.BackgroundColor3 = Color3.new(0.588235, 0.25098, 0.894118)
+Clear.BorderColor3 = Color3.new(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.675422132, 0, 0.66993463, 0)
+Clear.Size = UDim2.new(0, 129, 0, 31)
+Clear.Font = Enum.Font.FredokaOne
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.new(0, 0, 0)
+Clear.TextScaled = true
+Clear.TextSize = 14
+Clear.TextWrapped = true
+
+UICorner_4.Parent = Clear
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.new(1, 0, 0)
+Close.BorderColor3 = Color3.new(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.919324577, 0, 0, 0)
+Close.Size = UDim2.new(0, 43, 0, 43)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.new(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.31144464, 0, 0.0228758175, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Helper Developer"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+UICorner_5.Parent = TextLabel
+
+IY.Name = "IY"
+IY.Parent = Frame
+IY.BackgroundColor3 = Color3.new(0.588235, 0.25098, 0.894118)
+IY.BorderColor3 = Color3.new(0, 0, 0)
+IY.BorderSizePixel = 0
+IY.Position = UDim2.new(0.0436636135, 0, 0.839215636, 0)
+IY.Size = UDim2.new(0, 46, 0, 30)
+IY.Font = Enum.Font.FredokaOne
+IY.Text = "IY"
+IY.TextColor3 = Color3.new(0, 0, 0)
+IY.TextScaled = true
+IY.TextSize = 14
+IY.TextWrapped = true
+
+UICorner_6.Parent = IY
+
+DEX.Name = "DEX"
+DEX.Parent = Frame
+DEX.BackgroundColor3 = Color3.new(0.588235, 0.25098, 0.894118)
+DEX.BorderColor3 = Color3.new(0, 0, 0)
+DEX.BorderSizePixel = 0
+DEX.Position = UDim2.new(0.170731708, 0, 0.843137264, 0)
+DEX.Size = UDim2.new(0, 69, 0, 28)
+DEX.Font = Enum.Font.FredokaOne
+DEX.Text = "DEX"
+DEX.TextColor3 = Color3.new(0, 0, 0)
+DEX.TextScaled = true
+DEX.TextSize = 14
+DEX.TextWrapped = true
+
+UICorner_7.Parent = DEX
+
+FlyGUI.Name = "FlyGUI"
+FlyGUI.Parent = Frame
+FlyGUI.BackgroundColor3 = Color3.new(0.588235, 0.25098, 0.894118)
+FlyGUI.BorderColor3 = Color3.new(0, 0, 0)
+FlyGUI.BorderSizePixel = 0
+FlyGUI.Position = UDim2.new(0.341463417, 0, 0.843137264, 0)
+FlyGUI.Size = UDim2.new(0, 100, 0, 28)
+FlyGUI.Font = Enum.Font.FredokaOne
+FlyGUI.Text = "FLY GUI"
+FlyGUI.TextColor3 = Color3.new(0, 0, 0)
+FlyGUI.TextScaled = true
+FlyGUI.TextSize = 14
+FlyGUI.TextWrapped = true
+
+UICorner_8.Parent = FlyGUI
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.675422132, 0, 0.882352948, 0)
+TextLabel_2.Size = UDim2.new(0, 163, 0, 25)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "By Scripts from Minion"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+-- Scripts
+
+local function XIGEXUA_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Parent.Source.Text)()
+	end)
+end
+coroutine.wrap(XIGEXUA_fake_script)()
+local function WTLLL_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Source.Text = ''
+	end)
+end
+coroutine.wrap(WTLLL_fake_script)()
+local function WNSJVS_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(WNSJVS_fake_script)()
+local function BDFXGW_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(BDFXGW_fake_script)()
+local function EGLFJ_fake_script() -- IY.LocalScript 
+	local script = Instance.new('LocalScript', IY)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(EGLFJ_fake_script)()
+local function RZMKZVT_fake_script() -- DEX.LocalScript 
+	local script = Instance.new('LocalScript', DEX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+	end)
+end
+coroutine.wrap(RZMKZVT_fake_script)()
+local function TECQJZK_fake_script() -- FlyGUI.LocalScript 
+	local script = Instance.new('LocalScript', FlyGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MinionRoblox/FLY-GUI-MINION/main/FLY%20SCRIPTS%20FROM%20MINION"))()
+	end)
+end
+coroutine.wrap(TECQJZK_fake_script)()
